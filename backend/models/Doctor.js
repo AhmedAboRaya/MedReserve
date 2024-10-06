@@ -49,7 +49,7 @@ const doctorSchema = new mongoose.Schema(
       type: [availabilitySchema],
       required: [true, "doctor availability is required"],
     },
-    avg_checkup_time: { // Updated field name
+    avg_checkup_time: { 
       type: Number,
       required: [true, "doctor average checkup time is required"]
     }

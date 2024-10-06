@@ -18,9 +18,12 @@ const reservationSchema = new mongoose.Schema(
         type: String,
         enum: ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"],
     },
+    number: {
+      type: Number,
+      required: true,
+    },
     timeSlot: {
       type: String,
-      required: true,
     },
     room: {
       type: mongoose.Schema.Types.ObjectId,
