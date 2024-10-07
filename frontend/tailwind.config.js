@@ -8,14 +8,14 @@ export default {
     extend: {
       colors: {
         light: {
-          text: '#080c0d',
-          bg: '#f7fafb',
-          primary: '#5aa7b9',
-          secondary: '#9cd1dd',
-          accent: '#6bc4d8',
+          text: '#000000',
+          bg: '#F6F0F0',
+          primary: '#0067FF',
+          secondary: '#E4ECF9',
+          accent: '#0B1628',
         },
         dark: {
-          text: '#f2f6f7',
+          text: '#F6F0F0',
           bg: '#030607',
           primary: '#4693a4',
           secondary: '#225763',
