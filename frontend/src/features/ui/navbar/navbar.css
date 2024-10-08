@@ -1,0 +1,11 @@
+
+.logo{
+    width: 2rem;
+    height: 2rem; 
+    padding-bottom: 5px; 
+}
+
+.active{
+    color: #0067ff;
+    font-weight: 500;
+}

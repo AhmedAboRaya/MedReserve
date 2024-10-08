@@ -5,7 +5,7 @@ import { Player } from '@lottiefiles/react-lottie-player';
 import { login_api } from "../../apis/apis";
 import SkeletonLoader from "./SkeletonLoader"; 
 import { motion } from "framer-motion";
-import { RingLoader } from "react-spinners"; // Import RingLoader
+import { RingLoader } from "react-spinners"; 
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -19,7 +19,7 @@ const Login = () => {
     const timer = setTimeout(() => {
       setLoading(false);
       setIsFormVisible(true); 
-    }, 1000); 
+    }, 2600); 
 
     return () => clearTimeout(timer);
   }, []);
@@ -47,8 +47,14 @@ const Login = () => {
   return (
     <>
       {loading ? (
-        <div className="min-h-screen flex items-center justify-center bg-light-bg">
-          <RingLoader loading={loading} size={100} color="#5aa7b9" />
+        <div className="min-h-screen flex items-center justify-center">
+          {/* <RingLoader loading={loading} size={100} color="#5aa7b9" /> */}
+          <Player
+            loop
+            autoplay
+            src="../../../public/loader.json"
+            style={{ size: "100px", height: "100px" }}
+            />
         </div>
       ) : (
         !isFormVisible ? ( 

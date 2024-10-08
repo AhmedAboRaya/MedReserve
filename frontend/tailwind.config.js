@@ -9,6 +9,7 @@ export default {
       colors: {
         light: {
           text: '#000000',
+          txtOpacity: "#818181",
           bg: '#F6F0F0',
           primary: '#0067FF',
           secondary: '#E4ECF9',
